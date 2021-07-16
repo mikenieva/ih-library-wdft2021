@@ -5,7 +5,6 @@ const mongoose      = require("mongoose")
 
 const Book          = require('./models/Book')
 
-
 // 2. MIDDLEWARES
 require('dotenv').config()
 
@@ -16,7 +15,6 @@ app.set("view engine", "hbs")
 app.get("/", (req,res) => {
     res.render("index")
 })
-
 
 // 4. SERVIDOR
 
