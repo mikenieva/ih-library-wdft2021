@@ -1,0 +1,19 @@
+<form action="/search" method="POST">
+    <label>Busca tu palabra</label>
+    <input id="palabra" name="palabra" />
+    <br />
+    <label>Cuál es tu nombre?</label>
+    <input />
+    <br />
+    <label>Cuál es tu apellido?</label>
+    <input />
+    <button type="submit">Buscar palabra</button>
+</form>
+
+
+
+{{#with busqueda}}
+    <p>Palabra que se buscó: {{this.palabra}}</p>
+    <p>Nombre: </p>
+    <p>Apellido: </p>
+{{/with}}

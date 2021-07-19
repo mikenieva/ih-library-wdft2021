@@ -1,8 +1,17 @@
 <h1>Libros</h1>
 
+<a href="/books/create">Crear libro</a>
+
+
 {{#each libros}}
     <h3>{{this.title}}</h3>
     <p>{{this.author}}</p>
     <a href="/books/{{this._id}}">Ver detalles</a>
+    <a href="/books/{{this._id}}/edit">Editar</a>
+
+    <form action="/books/{{_id}}/delete" method="POST">
+        <button>Borrar libro</button>
+    </form>
+
     <hr />
 {{/each}}
